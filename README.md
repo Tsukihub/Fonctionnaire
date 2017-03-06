@@ -28,3 +28,28 @@ menu fixed quand scroll touche div id exemple
                 }
               );
           </script>
+          
+////////////////////////////afficher masquer//////////////////////////////////////
+passer en argument l'id de la div à afficher masquer
+                     function AfficherOnclick(loc){
+                              $( "#"+loc ).toggle("slow");
+                     }
+
+          ///////////////////////Affichage article ///////////////////////////////////////
+          classe cache a mettre sur div à masquer par défaut sinon non classe afficher à mettre dans css uniquement
+                    function afficherArticle(loc){
+                      $(".Afficher").removeClass("Afficher");
+                      $('#'+loc).addClass("Afficher");
+                    }
+
+.cache{
+	display: none;
+	
+}
+
+.Afficher {
+	display: inline;
+	overflow: wrap;
+	word-break: break-all;
+	
+}
